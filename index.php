@@ -15,9 +15,7 @@ include("includes/actions.php");
 <title><?php echo $title ?></title>
 <script src="includes/jquery.js" type="text/javascript"></script>
 <script src="includes/process.js" type="text/javascript"></script>
-<script src="includes/jqui.js" type="text/javascript"></script>
 <link rel="stylesheet" href="includes/style.css">
-<link rel="stylesheet" href="includes/jquery-ui.css">
 </head>
 
 <body onload="$('#chatscreen').scrollTop($('#chatscreen')[0].scrollHeight);">
