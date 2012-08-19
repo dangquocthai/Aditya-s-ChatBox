@@ -69,7 +69,7 @@ fwrite($file, $config);
 fclose($file);
 echo "Success <br/>";
 # Echo out the finished message
-echo 'Finished!<br/> <a href="index.php">Click here to visit the new chat room</a>. For further customization, feel free to mess around with the PHP files. Note: The login screen can be tweaked in the includes/actions.php file, not index.php. Also, there is a file called index-small.php (with corresponding includes/actions-small.php and includes/small.css, which will provide a small version of the site appropriate for embeding in a wordpress widget (Hint: use the "Text" widget and set the html to and iframe pointing to the chat script.) As a final note, many webhosts don\'t appreciate chat scripts, so be sure to check (I\'ve wiped my site clean about three times because of this). <br/>
+echo 'Finished!<br/> <a href="index.php">Click here to visit the new chat room</a>. For further customization, feel free to mess around with the PHP files. Also, many webhosts don\'t appreciate chat scripts, so be sure to check (I\'ve wiped my site clean about three times because of this). <br/>
 
 Happy hacking,<br/>
 Aditya';
