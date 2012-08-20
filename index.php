@@ -1,5 +1,4 @@
 <?php
-error_reporting(0);
 # Let's start session and let's include our files
 session_start();
 include("includes/config.php"); 
