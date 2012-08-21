@@ -1,4 +1,4 @@
-Took this from phpFreeChat, but didn't use all the emoticons. Look at the emoticons.php file, and you can add your own emoticons.
+Took this from phpFreeChat (msn theme), but didn't (yet) use all the emoticons. Look at the emoticons.php file, and you can add your own emoticons.
 msn_smiley.gif		:-)	:)
 msn_sad.gif			:-(	:(	:-<
 msn_laugh.gif		:-D	:-d	:d	:D	:->	:>
@@ -15,6 +15,9 @@ msn_donttell.gif	:-#
 msn_eyeroll.gif		8-)
 msn_weird.gif		:-S	:-s	:s	:S
 msn_teeth.gif		8o|
+
+Progress stops here
+
 msn_think.gif		*-)
 msn_sarcastic.gif	^o)
 msn_sleepy.gif		|-)
