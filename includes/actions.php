@@ -42,18 +42,9 @@ $sql = "SELECT * FROM auth WHERE user='".mysql_real_escape_string($username)."'"
 $query = mysql_query($sql);
 
 // If there are any records, delete them
-if(mysql_num_rows($query)>0){
+if(mysql_num_rows($query)!=0){
 
-$sql = "DELETE FROM auth WHERE user='".mysql_real_escape_string($username)."'";
-$query = mysql_query($sql);
-
-// Check that everything is okay
-// If something is wrong, display an error
-if(!$query){
-
-die(mysql_error());
-
-}
+$username = $username.time();
 
 }
 

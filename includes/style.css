@@ -9,8 +9,14 @@ body{
 
 font-family:"Oregano",Georgia,Serif;
 background: url(bg.png);
-font-size: 11px;
+font-size: 13px;
 background-color: #FFFFFF;
+
+}
+#tk {
+
+color: #FFFFFF;
+font-size: 17px;
 
 }
 .un {

@@ -65,7 +65,7 @@ function italic(){
 # Now if our username is "Guest"
 # Let's display the login form
 if(get_username() == "Guest"){
-
+if ($_REQUEST['taken'] == "true") { echo "<center><div id='tk'>That username is taken!</div></center>"; }
 echo "<td>"
 .login_form()
 ."</td>";
