@@ -15,9 +15,50 @@ include("includes/actions.php");
 <script src="includes/jquery.js" type="text/javascript"></script>
 <script src="includes/process.js" type="text/javascript"></script>
 <link rel="stylesheet" href="includes/style.css">
+<script type="text/javascript" >
+function il()
+ {
+ var i = document.getElementById("it");
+ i.onclick = italic;
+ var b = document.getElementById("bo");
+ b.onclick = bold;
+ var bi = document.getElementById("bi");
+ bi.onclick = bolditalic;
+ var u = document.getElementById("ul");
+ u.onclick = underline;
+ };
+function add(text){
+    var TheTextBox = document.getElementById("text");
+    TheTextBox.value = TheTextBox.value + text;
+}
+function underline(){
+		var itext = prompt("Underlined text:");
+		if (itext!=null){
+			add("<u>"+itext+"</u>");
+	}
+}
+function bold(){
+	var itext = prompt("Bold text:");
+	if (itext!=null){
+		add("<b>"+itext+"</b>");
+	}	
+}
+function bolditalic() {
+	var itext = prompt("Bold and italic text:");
+	if (itext!=null){
+		add("<i><b>"+itext+"</b></i>");
+	}	
+}
+function italic(){
+	var itext = prompt("Italic text:");
+	if (itext!=null){
+		add("<i>"+itext+"</i>");
+	}
+}
+</script>
 </head>
 
-<body onload="$('#chatscreen').scrollTop($('#chatscreen')[0].scrollHeight);">
+<body onload="$('#chatscreen').scrollTop($('#chatscreen')[0].scrollHeight);il();">
 
 <?php
 
@@ -112,7 +153,11 @@ echo "<div class='user'>".$row['user']."</div>";
 <br/>
 <div align=center >
 <form action="" autocomplete="off">
-<div id="tb">
+<div id="tb" align="center">
+<input type="button" value="I" id="it" />
+<input type="button" value="B" id="bo" />
+<input type="button" value="B+I" id="bi" />
+<input type="button" value="U" id="ul" />
 </div>
 <br/>
 <input type="text" size="109" id="text" class="in" name="chattxt" /> <input type="submit" class="button" id="submitbutton" value="=>" />
