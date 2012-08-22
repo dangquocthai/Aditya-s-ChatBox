@@ -12,7 +12,6 @@ include("emoticons.php");
 // Here user sets his/her username that
 // He/she will use in this chatroom
 function login_form(){
-
 echo "<br /><br />";
 echo "<table width='500' border='0' id='maintable' style='background-color: transparent;' align='center'>"
 ."<tr>"
@@ -44,7 +43,8 @@ $query = mysql_query($sql);
 // If there are any records, delete them
 if(mysql_num_rows($query)!=0){
 
-$username = $username.time();
+header("Location: index.php?taken=true");
+die();
 
 }
 
