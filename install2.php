@@ -67,10 +67,6 @@ echo "Success<br/>";
 # Status update again
 echo "Writing config...";
 # Open config file
-if (!is_writable("includes/") {
-echo "<a href=\"install.php\">Go back</a><br/>Fail!";
-die("");
-}
 $file = fopen("includes/config.db.php", "w");
 # Set file contents
 $config = "<?php 
