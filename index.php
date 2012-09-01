@@ -109,7 +109,7 @@ echo "Can not get messages from database.";
 
 # If everything is good let's display
 # User's messages
-while($row = Cutend(mysql_fetch_array($query),50,'last')){
+while($row = Cutend(mysql_fetch_array($query),10,'last')){
 
 echo "<div align='left'><button class=\"un\">"."<b>".$row['user']."</b></button>  ".$row['text']."</div><hr/>";
 
@@ -166,13 +166,13 @@ echo "<div class='user'>".$row['user']."</div>";
 <div align=center >
 <form action="" autocomplete="off">
 <div id="tb" align="center">
-<input type="button" value="I" id="it" />
-<input type="button" value="B" id="bo" />
-<input type="button" value="B+I" id="bi" />
-<input type="button" value="U" id="ul" />
+<input type="button" value="I" id="it" class="for" />
+<input type="button" value="B" id="bo" class="for" />
+<input type="button" value="B+I" id="bi" class="for" />
+<input type="button" value="U" id="ul" class="for" />
 </div>
 <br/>
-<input type="text" size="109" id="text" class="in" name="chattxt" /> <input type="submit" class="button" id="submitbutton" value="=>" />
+<input type="text" size="70" id="text" class="in" name="chattxt" /> <input type="submit" class="button" id="submitbutton" value="=>" />
 </form>
 </div>
 <?php

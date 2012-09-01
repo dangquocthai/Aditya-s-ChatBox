@@ -98,8 +98,8 @@ border-left: 1px solid #E6E6E6;
 
 #chatscreen{
 
-min-width: 400px;
-min-height: 300px;
+min-width: 300px;
+min-height: 200px;
 padding-top: 25px;
 padding-right: 25px;
 padding-bottom: 25px;
@@ -107,8 +107,8 @@ padding-left: 40px;
 font-family:"Times New Roman",Georgia,Serif;
 background-color: #FFFFFF;
 font-size: 16px;
-width:700px;
-height: 450px;
+width:500px;
+height: 300px;
 float: left;
 overflow: auto;
 text-align: left;
@@ -128,13 +128,17 @@ border-collapse: collapse;
 td, th {
    border:none;
 }
+.for{
+	border: 1px solid #555555;	
+}
 
 #onlineusers{
 
 font-size:19px;
 color: #FFFFFF;
 background-color: transparent;
-height: 500px;
+height: 350px;
+overflow: auto;
 min-width: 100px;
 float: right;
 
@@ -160,15 +164,10 @@ background-color: #E8E9E2;
 
 }
 
-#userbox{
-
-
-height: 20px;
-
-}
 
 #usersbox{
 
+max-height: 500px;
 text-align: left;
 
 }
