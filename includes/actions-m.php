@@ -200,12 +200,10 @@ echo "Can not get messages from database.";
 }else{
 
 // If everything is fine let's display our messages
-// First to come is time, it will look like this (12:34)
-// Second is user's name and after that comes the text
-// For example: (13:54) Jaan: Hey there!
+
 while($row = mysql_fetch_array($query)){
 
-echo "<div align='left'><button class=\"un\">"."<b>".$row['user']."</b></button>  ".$row['text']."</div><hr/>";
+echo "<div align='left'><button class=\"un\">"."<b>".$row['user']."</b></button>  ".$row['text']."</div><hr />";
 
 }
 
