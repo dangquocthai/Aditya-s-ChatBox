@@ -14,8 +14,8 @@
 //    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 # Let's start session and let's include our files
 session_start();
-include("includes/config.php"); 
-include("includes/actions.php");
+include("../includes/config-m.php"); 
+include("../includes/actions-m.php");
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -24,9 +24,9 @@ include("includes/actions.php");
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 <title><?php echo $title ?></title>
-<script src="includes/jquery.js" type="text/javascript"></script>
-<script src="includes/process.js" type="text/javascript"></script>
-<link rel="stylesheet" href="includes/style.css">
+<script src="../includes/jquery.js" type="text/javascript"></script>
+<script src="../includes/process-m.js" type="text/javascript"></script>
+<link rel="stylesheet" href="../includes/small.css">
 <script type="text/javascript" >
 function il()
  {
@@ -125,7 +125,7 @@ echo "<div align='left'><button class=\"un\">"."<b>".$row['user']."</b></button>
 <td class="middlebox" id="usersbox" rowspan="2">
 <div id="onlineusers">
 <?php
-echo "<i><big>Logged in as: </big></i> ".get_username()." (".get_link().") <hr/><br/>"; 
+echo "<i><small>Logged in as: </i> ".get_username()." (".get_link().") <hr/><br/></small>"; 
 ?>
 <?php
 # Let's say greetings to the user and display the "Log out link"
@@ -172,7 +172,7 @@ echo "<div class='user'>".$row['user']."</div>";
 <input type="button" value="U" id="ul" class="for" />
 </div>
 <br/>
-<input type="text" size="70" id="text" class="in" name="chattxt" /> <input type="submit" class="button" id="submitbutton" value="=>" />
+<input type="text" size="40" id="text" class="in" name="chattxt" /> <input type="submit" class="button" id="submitbutton" value="=>" />
 </form>
 </div>
 <?php
