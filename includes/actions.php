@@ -14,7 +14,6 @@
 //    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Let's start our session
 session_start();
-
 // Include the config.php because we are
 // Going to start work with our database
 include("config.php");

@@ -19,15 +19,6 @@ session_start();
 // Going to start work with our database
 include("config-m.php");
 include("emoticons.php");
-function Cutend($data, $length, $startLocation){
-   if($startLocation == 'first'){
-      return array_slice($data, 0, $length);
-   }else if($startLocation == 'last'){
-      $offset = count($data) - $length - 1;
-      if($offset < 0) $offset = 0;
-      return array_slice($data, $offset, $length);
-   }
-}
 
 // First let's make a login form
 // Here user sets his/her username that
@@ -212,7 +203,7 @@ echo "Can not get messages from database.";
 // First to come is time, it will look like this (12:34)
 // Second is user's name and after that comes the text
 // For example: (13:54) Jaan: Hey there!
-while($row = Cutend(mysql_fetch_array($query),10,'last')){
+while($row = mysql_fetch_array($query)){
 
 echo "<div align='left'><button class=\"un\">"."<b>".$row['user']."</b></button>  ".$row['text']."</div><hr/>";
 

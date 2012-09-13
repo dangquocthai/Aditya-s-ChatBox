@@ -109,7 +109,7 @@ echo "Can not get messages from database.";
 
 # If everything is good let's display
 # User's messages
-while($row = Cutend(mysql_fetch_array($query),10,'last')){
+while($row = mysql_fetch_array($query)){
 
 echo "<div align='left'><button class=\"un\">"."<b>".$row['user']."</b></button>  ".$row['text']."</div><hr/>";
 
