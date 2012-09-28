@@ -89,6 +89,12 @@ echo "<td>"
 
 <table border="0" cellpadding="1" cellspacing="0" align="center" id="maintable">
 <tr>
+<div align="center">
+<form>
+<input type="button" value="-" id="small" />
+<input type="button" value="+" id="big" />
+</form>
+</div>
 </tr>
 <tr>
 <td align="center" class="tablebottom">
