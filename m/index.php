@@ -46,25 +46,25 @@ function add(text){
 function underline(){
 		var itext = prompt("Underlined text:");
 		if (itext!=null){
-			add("<u>"+itext+"</u>");
+			add("[U]"+itext+"[/U]");
 	}
 }
 function bold(){
 	var itext = prompt("Bold text:");
 	if (itext!=null){
-		add("<b>"+itext+"</b>");
+		add("[B]"+itext+"[/B]");
 	}	
 }
 function bolditalic() {
 	var itext = prompt("Bold and italic text:");
 	if (itext!=null){
-		add("<i><b>"+itext+"</b></i>");
+		add("[I][B]"+itext+"[/B][/I]");
 	}	
 }
 function italic(){
 	var itext = prompt("Italic text:");
 	if (itext!=null){
-		add("<i>"+itext+"</i>");
+		add("[I]"+itext+"[/I]");
 	}
 }
 </script>

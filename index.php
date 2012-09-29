@@ -26,7 +26,7 @@ include("includes/actions.php");
 <title><?php echo $title ?></title>
 <script src="includes/jquery.js" type="text/javascript"></script>
 <script src="includes/process.js" type="text/javascript"></script>
-<link rel="stylesheet" href="includes/style.css">
+<link rel="stylesheet" type="text/css" href="includes/style.css" />
 <script type="text/javascript" >
 function il()
  {
@@ -46,25 +46,25 @@ function add(text){
 function underline(){
 		var itext = prompt("Underlined text:");
 		if (itext!=null){
-			add("<u>"+itext+"</u>");
+			add("[U]"+itext+"[/U]");
 	}
 }
 function bold(){
 	var itext = prompt("Bold text:");
 	if (itext!=null){
-		add("<b>"+itext+"</b>");
+		add("[B]"+itext+"[/B]");
 	}	
 }
 function bolditalic() {
 	var itext = prompt("Bold and italic text:");
 	if (itext!=null){
-		add("<i><b>"+itext+"</b></i>");
+		add("[I][B]"+itext+"[/B][/I]");
 	}	
 }
 function italic(){
 	var itext = prompt("Italic text:");
 	if (itext!=null){
-		add("<i>"+itext+"</i>");
+		add("[I]"+itext+"[/I]");
 	}
 }
 </script>
@@ -89,12 +89,7 @@ echo "<td>"
 
 <table border="0" cellpadding="1" cellspacing="0" align="center" id="maintable">
 <tr>
-<div align="center">
-<form>
-<input type="button" value="-" id="small" />
-<input type="button" value="+" id="big" />
-</form>
-</div>
+
 </tr>
 <tr>
 <td align="center" class="tablebottom">

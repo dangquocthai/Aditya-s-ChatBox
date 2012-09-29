@@ -29,7 +29,13 @@ $text = str_replace(":-#","<img src=smileys/msn_donttell.gif>",$text);
 $text = str_replace("8-)","<img src=smileys/msn_eyeroll.gif>",$text);
 $text = str_replace(array(":-S",":-s",":s",":S"),"<img src=smileys/msn_wierd.gif>",$text);
 $text = str_replace("8o|","<img src=smileys/msn_teeth.gif>",$text);
-$text = str_replace(array(),"<img src=smileys/msn_.gif>",$text);
+#$text = str_replace(array(),"<img src=smileys/msn_.gif>",$text);
+$text = str_replace("[B]","<b>",$text);
+$text = str_replace("[/B]","</b>",$text);
+$text = str_replace("[U]","<u>",$text);
+$text = str_replace("[/U]","</u>",$text);
+$text = str_replace("[I]","<i>",$text);
+$text = str_replace("[/I]","</i>",$text);
 return $text;
 }
 

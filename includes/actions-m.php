@@ -167,7 +167,7 @@ return $link;
 function post_message(){
 
 // Let's clean our text that user entered
-$text = addslashes($_REQUEST['text']);
+$text = addslashes(htmlentities($_REQUEST['text']));
 # Comment out the next two lines to disable emoticons
 $tmpstr = emot($text);
 $text = $tmpstr;
