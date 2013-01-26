@@ -71,7 +71,9 @@ function italic(){
 </head>
 
 <body onload="$('#chatscreen').scrollTop($('#chatscreen')[0].scrollHeight);il();">
-
+<div id='table'>
+      <div id='cell'>
+        <div class='modal-dialog'>
 <?php
 
 # Now if our username is "Guest"
@@ -126,7 +128,7 @@ echo "<div align='left'><button class=\"un\">"."<b>".$row['user']."</b></button>
 <td class="middlebox" id="usersbox" rowspan="2">
 <div id="onlineusers">
 <?php
-echo "<i><big>Logged in as: </big></i> ".get_username()." (".get_link().") <hr/><br/>"; 
+echo "<i><big>Logged in as: </big></i> ".get_username()." <button class='button'>".get_link()."</button> <hr/><br/>"; 
 ?>
 <?php
 # Let's say greetings to the user and display the "Log out link"
@@ -167,10 +169,10 @@ echo "<div class='user'>".$row['user']."</div>";
 <div align=center >
 <form action="" autocomplete="off">
 <div id="tb" align="center">
-<input type="button" value="I" id="it" class="for" />
-<input type="button" value="B" id="bo" class="for" />
-<input type="button" value="B+I" id="bi" class="for" />
-<input type="button" value="U" id="ul" class="for" />
+<input type="button" value="I" id="it" class="for button" />
+<input type="button" value="B" id="bo" class="for button" />
+<input type="button" value="B+I" id="bi" class="for button" />
+<input type="button" value="U" id="ul" class="for button" />
 </div>
 <br/>
 <input type="text" size="70" id="text" class="in" name="chattxt" /> <input type="submit" class="button" id="submitbutton" value="=>" />
@@ -181,6 +183,8 @@ echo "<div class='user'>".$row['user']."</div>";
 }
 
 ?>
-
+</div>
+      </div>
+    </div>
 </body>
 </html>
