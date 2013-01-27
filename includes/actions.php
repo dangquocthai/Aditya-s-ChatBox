@@ -202,7 +202,7 @@ echo "Can not get messages from database.";
 // If everything is fine let's display our messages
 while($row = mysql_fetch_array($query)){
 
-echo "<div align='left'><button class=\"un\">"."<b>".$row['user']."</b></button>  ".$row['text']."</div><hr/>";
+echo "<div align='left'><button title='".$row['user']." posted at ".$row['time']."' class=\"un\">"."<b>".$row['user']."</b></button>  ".$row['text']."</div><hr/>";
 
 }
 
