@@ -1,5 +1,7 @@
 Copyright (C) 2012 Aditya Goturu
 # Aditya's ChatBox: The super-light chat room.
+SEE THIS LIVE AT: https://chat-aditya3098.rhcloud.com
+
 ## Minimum requirements:
 PHP 5+
 
