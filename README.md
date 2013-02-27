@@ -26,3 +26,6 @@ There are two ways to install Aditya's ChatBox: Mannual and Web-based.
 3) Import db.sql into the mysql database you mentioned in the config.db.php file
 
 Note: There is a script called erase.php that erases the database of users and posts. This script will only run if there is a file called 'db.erase' in the root directory of the chat script i.e the directory in which this file is. After execution, the script deletes the db.erase script
+
+
+SEE THIS LIVE AT: https://chat-aditya3098.rhcloud.com
